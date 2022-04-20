@@ -1,0 +1,22 @@
+@media screen and (min-width: 900px) {
+    .container{
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 1fr;
+        grid-template-areas: "supervisor team calculator" " supervisor karma calculator ";
+        align-items: center;
+        &__card{
+            &--left{
+                grid-area: supervisor; 
+            }
+            &--right{
+                grid-area: calculator;
+            }
+            &--top{
+                grid-area: team;
+            }
+            &--bottom{
+                grid-area: karma;
+            }
+        }
+    }
+}
